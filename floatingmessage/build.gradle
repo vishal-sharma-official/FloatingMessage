@@ -40,7 +40,7 @@ afterEvaluate {
 
                 groupId = 'com.github.vishal-sharma-official'
                 artifactId = 'FloatingMessage'
-                version = '1.0.0'
+                version = '1.0.2'
             }
         }
     }
