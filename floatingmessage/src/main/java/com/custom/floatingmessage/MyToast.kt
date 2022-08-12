@@ -9,6 +9,10 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 
+/**
+ * Created by Vishal on 12/08/22.
+ */
+
 class MyToast(context: Context) : Toast(context) {
     companion object {
         const val INFO = 0

@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.res.ResourcesCompat
+import com.custom.floatingmessage.MySnackBar
+import com.custom.floatingmessage.MySnackBar.showSnackBarProfileView
 import com.custom.floatingmessage.MyToast
 import com.custom.floatingmessage.MyToast.Companion.ERROR
 import com.custom.floatingmessage.MyToast.Companion.INFO
@@ -19,7 +21,8 @@ class MainActivity : AppCompatActivity() {
 
         val typeface = ResourcesCompat.getFont(this, R.font.poppins_semi_bold)
         findViewById<Button>(R.id.button).setOnClickListener {
-            MyToast.myToastShort(this, "Success", SUCCESS, typeface)
+          //  MyToast.myToastShort(this, "Success", SUCCESS, typeface)
+            this.showSnackBarProfileView(it, "hello SNack", null, "", null)
         }
 
         findViewById<Button>(R.id.button2).setOnClickListener {

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_stroke"
+    android:minHeight="50dp"
+    android:orientation="horizontal"
+    android:padding="@dimen/_10sdp">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imProfile"
+        android:layout_width="@dimen/_45sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/circleImageView"
+        app:srcCompat="@drawable/ic_avatar" />
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        tools:text="Name"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvOK"
+        app:layout_constraintStart_toEndOf="@+id/imProfile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <TextView
+        android:id="@+id/tvInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        tools:text="Info"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintEnd_toStartOf="@+id/tvOK"
+        app:layout_constraintStart_toEndOf="@+id/imProfile"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+    <TextView
+        android:id="@+id/tvOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="@string/ok"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
